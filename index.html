@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Find Five</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>🎯 Find Five</h1>
+
+<div class="rules">
+
+    <h3>How to Play</h3>
+
+    <ol>
+        <li>Click <b>Start Game</b>.</li>
+        <li>Four numbers are given.</li>
+        <li>Fill the other five cells.</li>
+        <li>Make all row totals, column totals and the grand total correct.</li>
+        <li>Click <b>Finish</b>.</li>
+    </ol>
+
+</div>
+
+<div class="controls">
+
+    <button id="startBtn"
+            onclick="generatePuzzle()">
+        ▶ Start Game
+    </button>
+
+    <button id="finishBtn"
+            onclick="finishGame()">
+        ✅ Finish
+    </button>
+
+</div>
+
+<div class="difficulty-box">
+
+    Difficulty:
+
+    <select id="difficulty">
+
+        <option value="easy">
+            Easy
+        </option>
+
+        <option value="medium">
+            Medium
+        </option>
+
+        <option value="hard">
+            Hard
+        </option>
+
+    </select>
+
+</div>
+
+<div id="timer"></div>
+
+<div id="game"></div>
+
+<div id="message"></div>
+
+<div class="panel">
+
+    <h2>📊 Personal Statistics</h2>
+
+    <div id="personalBest">
+        No games completed yet.
+    </div>
+
+    <br>
+
+    <button id="resetStatsBtn"
+            onclick="resetStats()">
+        Reset Statistics
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

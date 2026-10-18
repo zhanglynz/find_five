@@ -1,0 +1,234 @@
+/* =========================
+   General Page
+   ========================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    text-align: center;
+    margin: 20px;
+}
+
+h1{
+    color: #1f4e79;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Rules Panel
+   ========================= */
+
+.rules{
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0,0,0,0.10);
+}
+
+.rules h3{
+    margin-top: 0;
+    color: #1f4e79;
+}
+
+.rules ol{
+    padding-left: 24px;
+}
+
+.rules li{
+    margin-bottom: 8px;
+}
+
+/* =========================
+   Control Buttons
+   ========================= */
+
+.controls{
+    margin: 20px 0;
+}
+
+#startBtn,
+#finishBtn{
+    padding: 15px 30px;
+    margin: 8px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+    min-width: 180px;
+}
+
+#startBtn{
+    background: #2e8b57;
+}
+
+#finishBtn{
+    background: #1f4e79;
+}
+
+#startBtn:hover,
+#finishBtn:hover{
+    opacity: 0.9;
+}
+
+/* =========================
+   Difficulty
+   ========================= */
+
+.difficulty-box{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#difficulty{
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* =========================
+   Timer
+   ========================= */
+
+#timer{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* =========================
+   Puzzle Table
+   ========================= */
+
+.game-table{
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+.game-table th,
+.game-table td{
+    border: 1px solid #444;
+    width: 90px;
+    height: 60px;
+    text-align: center;
+    font-size: 22px;
+}
+
+input.cell{
+    width: 70px;
+    height: 36px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* =========================
+   Messages
+   ========================= */
+
+#message{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.correct{
+    color: green;
+}
+
+.wrong{
+    color: #b22222;
+}
+
+/* =========================
+   Statistics Panel
+   ========================= */
+
+.panel{
+    background: white;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   Reset Statistics Button
+   ========================= */
+
+#resetStatsBtn{
+    background: #b22222;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 20px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#resetStatsBtn:hover{
+    opacity: 0.9;
+}
+
+/* =========================
+   Mobile Devices
+   ========================= */
+
+@media (max-width: 768px){
+
+    body{
+        margin: 10px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    .rules{
+        font-size: 15px;
+    }
+
+    #startBtn,
+    #finishBtn{
+
+        display: block;
+
+        width: 95%;
+        max-width: 350px;
+
+        margin: 10px auto;
+    }
+
+    .game-table th,
+    .game-table td{
+        width: 70px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    input.cell{
+        width: 55px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    #resetStatsBtn{
+        width: 95%;
+        max-width: 300px;
+    }
+
+    .panel{
+        margin: 15px auto;
+    }
+}
